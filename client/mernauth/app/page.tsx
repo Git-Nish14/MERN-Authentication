@@ -1,6 +1,6 @@
-import Link from "next/link";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import { ToastContainer } from "react-toastify";
 
 export default function Home() {
   return (
@@ -8,6 +8,7 @@ export default function Home() {
       className="flex flex-col items-center justify-center min-h-screen bg-cover bg-center"
       style={{ backgroundImage: `url('/bg_img.png')` }}
     >
+      <ToastContainer />
       <Navbar />
       <Hero />
     </div>
